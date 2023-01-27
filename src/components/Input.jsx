@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 
 export default function Input() {
     const dispatch = useDispatch();
-    const [addTodo, setAddTodo] = useState()
+    const [addTodo, setAddTodo] = useState('')
     const handler = (event)=>{
         setAddTodo(event.target.value)
     }

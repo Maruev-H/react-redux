@@ -8,16 +8,16 @@ export default function Todo() {
     const dispatch = useDispatch();
     const todos = useSelector((state) => state.todos)
     const removeTodo = (id) =>{
-        return{
-            type: "DELETE_TODO",
-            payload: id,
-        }
+        dispatch({
+          type: "DELETE_TODO",
+          payload: id,
+        })
     }
     return(
         <div className="keeper"> {todos.map((item) => (
-            <div className="task">
-              <p className="task__text"><span>{item.content}</span></p>
-              <button className="delete" type="button" onClick={()=>dispatch(removeTodo(item.id))}>
+            <div key={item.id} className="task">
+              <div className="task__text"><span>{item.content}</span></div>
+              <button className="delete" type="button" onClick={()=>removeTodo(item.id)}>
                 <img className="delete__logo" src={del}  alt="a" />
               </button>
             </div>
