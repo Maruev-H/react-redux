@@ -1,0 +1,55 @@
+ul {
+  list-style-type: none;
+  li {
+    margin-top: 10px;
+    border: 2px solid black;
+  }
+}
+.save {
+  width: 100%;
+  text-align: center;
+  &__input {
+    min-width: 600px;
+    min-height: 60px;
+    border: 2px solid black;
+  }
+  &__button {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 168px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    margin-bottom: 47px;
+  }
+}
+.keeper {
+  width: 804px;
+  margin: auto;
+}
+
+.task {
+  width: 800px;
+  padding: 40px;
+  border: 2px solid black;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+  display: flex;
+  &__text {
+    width: 100%;
+  }
+}
+.delete {
+  width: 28px;
+  height: 23px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  &__logo {
+    width: 19px;
+  }
+}
